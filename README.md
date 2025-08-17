@@ -10,7 +10,7 @@ BMWClient 是个免费开源的 Minecraft 1.21.4 fabric客户端，可以在吉�
 
 ## 许可
 
-这个项目受[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)管辖。这仅适用于直接位于此干净存储库中的源代码。在开发和编译过程中，我们可能会使用一些我们没有权利的附加源代码。此类代码不受GPL许可证管辖。
+这个项目受[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)。
 
 项目基于https://github.com/CCBlueX/LiquidBounce
 
