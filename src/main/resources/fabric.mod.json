@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "bmwclient",
+  "version": "${version}",
+  "name": "BMWClient",
+  "description": "A free mixin-based injection hacked-client for Minecraft using the Fabric modding toolchain.",
+  "authors": [
+    "YaoCat"
+  ],
+  "contributors": ["YaoCat","Manthe", "LeiJun", "CCBlueX", "Jvav", "Guiwow", "RunningMark"],
+  "contact": {
+    "homepage": "https://www.bjd-mc.com",
+    "sources": "https://github.com/yaocat/BMWClient/",
+    "issues": "https://github.com/yaocat/BMWClient/issues",
+    "email": "support@bjd-mc.com"
+  },
+  "license": "GNU General Public License v3.0",
+  "icon": "resources/bmwclient/icon_64x64.png",
+  "entrypoints": {
+    "main": []
+  },
+  "mixins": [
+    "bmwclient.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ["${minecraft_version}"],
+    "fabricloader": ">=${min_loader_version}",
+    "fabric-language-kotlin": ">=${fabric_kotlin_version}"
+  },
+  "suggests": {
+    "fabric": ">=${fabric_version}",
+    "viafabricplus": ">=${viafabricplus_version}"
+  },
+  "breaks": {
+    "viafabricplus": "<${viafabricplus_version}"
+  },
+  "accessWidener": "bmwclient.accesswidener"
+}
