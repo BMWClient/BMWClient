@@ -35,9 +35,9 @@ object ClientApi : BaseApi(config.apiEndpointV1) {
         get<MessageOfTheDay>("/client/$branch/motd")
 
     suspend fun requestSettingsList(branch: String = API_BRANCH) =
-        get<Array<AutoSettings>>("/client/$branch/settings")
+        get<Array<AutoSettings>>("/settings.json")
 
     suspend fun requestSettingsScript(settingId: String, branch: String = API_BRANCH) =
-        get<Reader>("/client/$branch/settings/$settingId")
+        get<Reader>("/settings/$settingId.json")
 
 }

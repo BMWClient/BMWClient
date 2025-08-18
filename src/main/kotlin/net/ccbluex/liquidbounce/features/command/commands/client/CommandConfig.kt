@@ -48,7 +48,7 @@ import org.apache.commons.io.input.CharSequenceReader
  */
 object CommandConfig : CommandFactory {
 
-    private const val CONFIGS_URL = "https://github.com/CCBlueX/LiquidCloud/tree/main/LiquidBounce/settings/nextgen"
+    private const val CONFIGS_URL = "https://github.com/BMWClient/BMWClient.github.io/tree/main/BMWClient"
 
     override fun createCommand(): Command {
         return CommandBuilder
@@ -64,7 +64,7 @@ object CommandConfig : CommandFactory {
     private fun browseSubcommand() = CommandBuilder
         .begin("browse")
         .handler { _, _ ->
-            browseUrl(CONFIGS_URL)
+            browseUrl("https://github.com/BMWClient/BMWClient.github.io/tree/main/BMWClient")
         }
         .build()
 

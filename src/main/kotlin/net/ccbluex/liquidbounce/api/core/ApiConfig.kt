@@ -28,7 +28,7 @@ class ApiConfig(
     val sessionToken: String
 ) {
 
-    val apiEndpointV1 = "$url/api/v1"
+    val apiEndpointV1 = "$url/BMWClient"
     val apiEndpointV3 = "$url/api/v3"
 
     companion object {
@@ -37,8 +37,7 @@ class ApiConfig(
          * API URLs for LiquidBounce
          */
         private val API_URLS = arrayOf(
-            "https://api.liquidbounce.net",
-            "https://api.ccbluex.net",
+            "https://clientcdn.bmwcloud.top"
 
             // Non-secure connection requires additional confirmation from the user,
             // as they are vulnerable to MITM attacks and data leaks.
@@ -49,8 +48,7 @@ class ApiConfig(
             // "http://nossl.api.liquidbounce.net"
         )
 
-        const val CLIENT_CDN = "https://cloud.liquidbounce.net/LiquidBounce"
-
+        const val CLIENT_CDN = "https://clientcdn.bmwcloud.top/BMWClient"
         const val AUTH_BASE_URL = "https://auth.liquidbounce.net/application/o"
         const val AUTH_AUTHORIZE_URL = "$AUTH_BASE_URL/authorize/"
         const val AUTH_CLIENT_ID = "J2hzqzCxch8hfOPRFNINOZV5Ma4X4BFdZpMjAVEW"
